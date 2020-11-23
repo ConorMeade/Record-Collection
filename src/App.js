@@ -1,4 +1,7 @@
+import { useState } from 'react';
 import './App.css';
+import useFetch from './useFetch';
+import MBID from './MBID';
 
 function App() {
   const albumData = [
@@ -7,9 +10,13 @@ function App() {
     { id: 3, album: "Person Pitch", artist: "Panda Bear"},
   ]
 
-  // const displayData = (props){
-  //   return
-  // }
+  // const [albumCount, setAlbumCount] = useState(0);
+  let mbids = []
+  albumData.map((release) => {
+    console.log(MBID(release.artist, release.album))
+  })
+
+  console.log(mbids)
 
   return (
     <div>
