@@ -4,6 +4,7 @@ const useFetch = (url) => {
     const [jsonAlbumData, setJsonAlbumData] = useState({})
 
     useEffect(() => {
+        if(!url) return
         fetch(url)
         .then(response => {
             if (response.ok){
