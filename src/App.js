@@ -21,28 +21,28 @@ function App() {
   // https://coverartarchive.org/release/${id}/front
 
 
-  useEffect(() => {
-    albumData.forEach(album => {
-      let artist_str = album.artist.split(' ').join('_')
-      let album_str = album.album.split(' ').join('_')
-      console.log(artist_str)
-      console.log(album_str)
-      fetch(`http://musicbrainz.org/ws/2/recording/?query=artist:${artist_str}+release:${album_str}&fmt=json`)
-        .then(response => {
-          if(response.ok){
-            // console.log(response.data)
-            return response.json();
-          }
-          throw new Error("error")
-        })
-        .then(mbid => {
-          console.log(mbid.recordings[0].releases[0].id); setAlbumMbid(oldIDs => [...oldIDs, mbid.recordings[0].releases[0].id])
-        })
-        .catch(() =>
-        setAlbumMbid(oldIDs => [...oldIDs, "couldn't find mbid"])
-        )
-        })
-  }, [albums]);
+  // useEffect(() => {
+  //   albumData.forEach(album => {
+  //     let artist_str = album.artist.split(' ').join('_')
+  //     let album_str = album.album.split(' ').join('_')
+  //     console.log(artist_str)
+  //     console.log(album_str)
+  //     fetch(`http://musicbrainz.org/ws/2/recording/?query=artist:${artist_str}+release:${album_str}&fmt=json`)
+  //       .then(response => {
+  //         if(response.ok){
+  //           // console.log(response.data)
+  //           return response.json();
+  //         }
+  //         throw new Error("error")
+  //       })
+  //       .then(mbid => {
+  //         console.log(mbid.recordings[0].releases[0].id); setAlbumMbid(oldIDs => [...oldIDs, mbid.recordings[0].releases[0].id])
+  //       })
+  //       .catch(() =>
+  //       setAlbumMbid(oldIDs => [...oldIDs, "couldn't find mbid"])
+  //       )
+  //       })
+  // }, [albums]);
   
   console.log(albumMbids)
 
@@ -58,7 +58,6 @@ function App() {
     <div>
       <ul>
         {/* {albumMbid} */}
-        {albumMbids.length}
         <br />
         {albumMbids}
         {/* {albumMbid.map((id) => <li>{id}</li>)} */}
