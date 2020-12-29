@@ -6,11 +6,12 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///musicdatabase.db'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     db.init_app(app)
 
     # importing here to avoid circular imports
-    from .view import main
+    from .views import main
     app.register_blueprint(main)
 
     return app

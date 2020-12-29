@@ -20,7 +20,14 @@ function App() {
     })
   }, [])
 
-  console.log(albumMbids);
+
+  useEffect(() => {
+    fetch('/albums').then(response => response.json).then(data => {
+      console.log("albums: ", data)
+    })
+  }, [])
+
+  // console.log(albumMbids);
 
   const addAlbum = (album) => {
     album.id = albums.length + 1
