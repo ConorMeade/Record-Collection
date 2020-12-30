@@ -8,4 +8,4 @@ class Album(db.Model):
     year = db.Column(db.Integer)
     genre = db.Column(db.String(20))
     date_added = db.Column(db.String(100))
-    cover = db.Column(db.String(300), nullable=False)
+    cover = db.Column(db.String(200))

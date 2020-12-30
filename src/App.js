@@ -11,7 +11,6 @@ function App() {
   ]
 
   const [albums, setAlbums] = useState(albumData);
-  const [albumMbids, setAlbumMbid] = useState([]);
   const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
@@ -22,7 +21,8 @@ function App() {
 
 
   useEffect(() => {
-    fetch('/albums').then(response => response.json).then(data => {
+    fetch('/albums').then(response => response.json()).then(data => {
+      console.log(typeof(data))
       console.log("albums: ", data)
     })
   }, [])
@@ -42,8 +42,6 @@ function App() {
       <p>The current time is {currentTime}.</p>
       <ul>
         <br />
-        {albumMbids}
-        
         <AlbumTable albums={albums}/>
         <AddAlbumForm addAlbum={addAlbum}/>
       </ul>

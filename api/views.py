@@ -9,12 +9,15 @@ main = Blueprint('main', __name__)
 
 # @main.route('/init', methods=['POST'])
 def init_collection():
-    # parse data from collection.json to make initial list of albums
-    albums = []
+    # USE ONLY ONCE 
+    # what about when we add new albums?
+    # albums = []
 
 
     with open("collection.json", "r") as f:
         json_collection_data = json.load(f)
+
+    # print(type(json_collection_data))
 
     # for release in json_collection_data['releases']:
     #     collection_entry = Album(id=release['release_id'], 
@@ -23,11 +26,31 @@ def init_collection():
     #                             year=release['basic_information']['year'], 
     #                             genre=release['basic_information']['genres'][0], 
     #                             date_added=release['date_added'], 
-    #                             cover=['basic_information']['huge_thumb'])
+    #                             cover=['basic_information']['thumb'])
     #     db.session.add(collection_entry)
     #     db.session.commit()
 
-    return albums
+
+    for i in range(len(json_collection_data['releases'])):
+        collection_entry = Album(id=json_collection_data['releases'][i]['release_id'],
+                                title=json_collection_data['releases'][i]['basic_information']['title'],
+                                artist=json_collection_data['releases'][i]['basic_information']['artists'][0]['name'],
+                                year=json_collection_data['releases'][i]['basic_information']['year'],
+                                genre=json_collection_data['releases'][i]['basic_information']['genres'][0],
+                                date_added=json_collection_data['releases'][i]['date_added'],
+                                cover=json_collection_data['releases'][i]['basic_information']['huge_thumb'])
+
+
+        # collection_entry = Album(id=release['release_id'], 
+        #                         title=release['basic_information']['title'], 
+        #                         artist=release['basic_information']['artists'][0]['name'], 
+        #                         year=release['basic_information']['year'], 
+        #                         genre=release['basic_information']['genres'][0], 
+        #                         date_added=release['date_added'], 
+        #                         cover=['basic_information']['thumb'])
+        db.session.add(collection_entry)
+        db.session.commit()
+    # return albums
 
 
 @main.route('/time')
@@ -59,6 +82,7 @@ def add_album():
 @main.route('/albums')
 
 def albums():
+    # init_collection()
     album_list = Album.query.all()
 
     albums = []
