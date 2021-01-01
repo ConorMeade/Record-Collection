@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import AddAlbumForm from './AddAlbumForm'
-import AlbumTable from './AlbumTable'
+import { Albums } from "./components/Albums" 
+// import AddAlbumForm from './AddAlbumForm'
+// import AlbumTable from './AlbumTable'
 
 function App() {
   const albumData = [
@@ -10,7 +11,7 @@ function App() {
     { id: 3, album: "Person Pitch", artist: "Panda Bear", mbid: null}
   ]
 
-  const [albums, setAlbums] = useState(albumData);
+  const [albums, setAlbums] = useState([]);
   const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
@@ -19,11 +20,10 @@ function App() {
     })
   }, [])
 
-
+  // fetching data from api, setting album state to data we fetched
   useEffect(() => {
     fetch('/albums').then(response => response.json()).then(data => {
-      console.log(typeof(data))
-      console.log("albums: ", data)
+      setAlbums(data.albums)
     })
   }, [])
 
@@ -37,13 +37,17 @@ function App() {
     setAlbums([...albums, album])
   }
 
+
+  console.log(albums)
   return (
     <div>
       <p>The current time is {currentTime}.</p>
       <ul>
         <br />
-        <AlbumTable albums={albums}/>
-        <AddAlbumForm addAlbum={addAlbum}/>
+        <Albums albums={albums}/>
+        {/* {albums} */}
+        {/* <AlbumTable albums={albums}/> */}
+        {/* <AddAlbumForm addAlbum={addAlbum}/> */}
       </ul>
     </div>
   )

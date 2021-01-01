@@ -3,7 +3,7 @@
       "page":1,
       "pages":1,
       "per_page":50,
-      "items":32,
+      "items":35,
       "urls":{
          
       }
@@ -2224,8 +2224,8 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$6.49",
-                  "value":6.49
+                  "formatted":"$6.00",
+                  "value":6.0
                },
                "max":{
                   "curr_abbr":"USD",
@@ -2507,14 +2507,14 @@
                "min":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$17.00",
-                  "value":17.0
+                  "formatted":"$15.00",
+                  "value":15.0
                },
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$20.00",
-                  "value":20.0
+                  "formatted":"$19.98",
+                  "value":19.98
                },
                "max":{
                   "curr_abbr":"USD",
@@ -3331,14 +3331,14 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$21.77",
-                  "value":21.77
+                  "formatted":"$21.95",
+                  "value":21.95
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$33.33",
-                  "value":33.33
+                  "formatted":"$36.46",
+                  "value":36.46
                }
             }
          },
@@ -3867,20 +3867,20 @@
                "min":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$19.00",
-                  "value":19.0
+                  "formatted":"$24.00",
+                  "value":24.0
                },
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$26.62",
-                  "value":26.62
+                  "formatted":"$26.81",
+                  "value":26.81
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$40.54",
-                  "value":40.54
+                  "formatted":"$48.72",
+                  "value":48.72
                }
             }
          },
@@ -5004,8 +5004,8 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$21.99",
-                  "value":21.99
+                  "formatted":"$21.97",
+                  "value":21.97
                },
                "max":{
                   "curr_abbr":"USD",
@@ -5688,14 +5688,288 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$26.50",
-                  "value":26.5
+                  "formatted":"$27.49",
+                  "value":27.49
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
                   "formatted":"$111.00",
                   "value":111.0
+               }
+            }
+         },
+         "folder":{
+            "name":"Uncategorized",
+            "id":1
+         }
+      },
+      {
+         "release_id":8236460,
+         "blocked_from_marketplace":false,
+         "collection_id":553548414,
+         "date_added":"2020-12-27T20:49:59-08:00",
+         "rating":0,
+         "basic_information":{
+            "artists":[
+               {
+                  "name":"Joy Division",
+                  "anv":"",
+                  "join":",",
+                  "role":"",
+                  "tracks":"",
+                  "id":3898,
+                  "resource_url":"https://api.discogs.com/artists/3898",
+                  "url":"/artist/3898"
+               }
+            ],
+            "artists_sort":"Joy Division",
+            "formats":[
+               {
+                  "name":"Vinyl",
+                  "qty":"1",
+                  "text":"180 g",
+                  "descriptions":[
+                     "LP",
+                     "Album",
+                     "Reissue",
+                     "Remastered"
+                  ]
+               }
+            ],
+            "genres":[
+               "Rock"
+            ],
+            "huge_thumb":"https://img.discogs.com/LJkKggMgwevgSOViSpKDu02-Kjs=/fit-in/350x350/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8236460-1457702340-1387.jpeg.jpg",
+            "id":8236460,
+            "master_id":4805,
+            "master_url":"https://api.discogs.com/masters/4805",
+            "labels":[
+               {
+                  "name":"Factory",
+                  "catno":"FACT 10R",
+                  "entity_type":"1",
+                  "entity_type_name":"Label",
+                  "id":857,
+                  "resource_url":"https://api.discogs.com/labels/857",
+                  "url":"/label/857"
+               }
+            ],
+            "resource_url":"https://api.discogs.com/releases/8236460",
+            "status":"Accepted",
+            "styles":[
+               "New Wave",
+               "Post-Punk"
+            ],
+            "thumb":"https://img.discogs.com/sj4TzQWL2qN0engR-C7jEqC_NqM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8236460-1457702340-1387.jpeg.jpg",
+            "title":"Unknown Pleasures",
+            "url":"/Joy-Division-Unknown-Pleasures/release/8236460",
+            "year":2015,
+            "companies":[
+               {
+                  "name":"Warner Records 90 Ltd.",
+                  "catno":"",
+                  "entity_type":"13",
+                  "entity_type_name":"Phonographic Copyright (p)",
+                  "id":901681,
+                  "resource_url":"https://api.discogs.com/labels/901681"
+               },
+               {
+                  "name":"Warner Records 90 Ltd.",
+                  "catno":"",
+                  "entity_type":"14",
+                  "entity_type_name":"Copyright (c)",
+                  "id":901681,
+                  "resource_url":"https://api.discogs.com/labels/901681"
+               },
+               {
+                  "name":"Optimal Media GmbH",
+                  "catno":"BE77559",
+                  "entity_type":"17",
+                  "entity_type_name":"Pressed By",
+                  "id":313190,
+                  "resource_url":"https://api.discogs.com/labels/313190"
+               },
+               {
+                  "name":"Fractured Music",
+                  "catno":"",
+                  "entity_type":"21",
+                  "entity_type_name":"Published By",
+                  "id":264765,
+                  "resource_url":"https://api.discogs.com/labels/264765"
+               },
+               {
+                  "name":"Strawberry Studios",
+                  "catno":"",
+                  "entity_type":"23",
+                  "entity_type_name":"Recorded At",
+                  "id":264501,
+                  "resource_url":"https://api.discogs.com/labels/264501"
+               }
+            ],
+            "identifiers":[
+               {
+                  "type":"Barcode",
+                  "value":"8 25646 18390 6",
+                  "description":"Text - sticker"
+               },
+               {
+                  "type":"Barcode",
+                  "value":"825646183906",
+                  "description":"Scanned - sticker"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"0825646183906   3 1=   BE77559-01 A2   F.A.",
+                  "description":"Runout Side A, Etched"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"0825646183906   V=T   BE77559-01 B\u2081",
+                  "description":"Runout Side B, Etched"
+               }
+            ],
+            "tracklist":[
+               {
+                  "position":"",
+                  "type_":"heading",
+                  "title":"Outside",
+                  "duration":""
+               },
+               {
+                  "position":"A1",
+                  "type_":"track",
+                  "title":"Disorder",
+                  "duration":"3:36"
+               },
+               {
+                  "position":"A2",
+                  "type_":"track",
+                  "title":"Day Of The Lords",
+                  "duration":"4:43"
+               },
+               {
+                  "position":"A3",
+                  "type_":"track",
+                  "title":"Candidate",
+                  "duration":"3:00"
+               },
+               {
+                  "position":"A4",
+                  "type_":"track",
+                  "title":"Insight",
+                  "duration":"4:00"
+               },
+               {
+                  "position":"A5",
+                  "type_":"track",
+                  "title":"New Dawn Fades",
+                  "duration":"4:47"
+               },
+               {
+                  "position":"",
+                  "type_":"heading",
+                  "title":"Inside",
+                  "duration":""
+               },
+               {
+                  "position":"B1",
+                  "type_":"track",
+                  "title":"She\u2019s Lost Control",
+                  "duration":"3:40"
+               },
+               {
+                  "position":"B2",
+                  "type_":"track",
+                  "title":"Shadowplay",
+                  "duration":"3:50"
+               },
+               {
+                  "position":"B3",
+                  "type_":"track",
+                  "title":"Wilderness",
+                  "duration":"2:35"
+               },
+               {
+                  "position":"B4",
+                  "type_":"track",
+                  "title":"Interzone",
+                  "duration":"2:10"
+               },
+               {
+                  "position":"B5",
+                  "type_":"track",
+                  "title":"I Remember Nothing",
+                  "duration":"6:00"
+               }
+            ],
+            "extraartists":[
+               {
+                  "name":"Joy Division",
+                  "anv":"",
+                  "join":"",
+                  "role":"Design [Sleeve]",
+                  "tracks":"",
+                  "id":3898,
+                  "resource_url":"https://api.discogs.com/artists/3898"
+               },
+               {
+                  "name":"Peter Saville (2)",
+                  "anv":"",
+                  "join":"",
+                  "role":"Design [Sleeve]",
+                  "tracks":"",
+                  "id":1069010,
+                  "resource_url":"https://api.discogs.com/artists/1069010"
+               },
+               {
+                  "name":"Chris Nagle",
+                  "anv":"",
+                  "join":"",
+                  "role":"Engineer",
+                  "tracks":"",
+                  "id":126611,
+                  "resource_url":"https://api.discogs.com/artists/126611"
+               },
+               {
+                  "name":"Martin Hannett",
+                  "anv":"",
+                  "join":"",
+                  "role":"Producer",
+                  "tracks":"",
+                  "id":80561,
+                  "resource_url":"https://api.discogs.com/artists/80561"
+               },
+               {
+                  "name":"Joy Division",
+                  "anv":"",
+                  "join":"",
+                  "role":"Words By, Music By",
+                  "tracks":"",
+                  "id":3898,
+                  "resource_url":"https://api.discogs.com/artists/3898"
+               }
+            ],
+            "released_formatted":"Jun 2015",
+            "notes":"This 2015 reissue is identical to [url=https://www.discogs.com/Joy-Division-Unknown-Pleasures/release/7132498]this edition[/url], except that this does not have a textured sleeve.\n\nSticker 1:\nVINYL COLLECTOR\nIncludes\ndownload\ncode for\nmp3 version\nof the album\nwww.thisisvinylcollector.com\"\n\nSticker 2:\n\"Joy Division Unknown Pleasures\nJoy Division's classic debut album\non 180gm heavyweight vinyl\nReplicating original album artwork,\ncut from the 2007 remasters\n[barcode]\n8 25646 18390 6\"\n\nRecorded at Strawberry Studios, Stockport. \nA Factory Records Product. \n\n\u2117 & \u00a9 2015 Warner Records 90 Ltd.",
+            "sales_history":{
+               "min":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$18.67",
+                  "value":18.67
+               },
+               "median":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$22.33",
+                  "value":22.33
+               },
+               "max":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$26.99",
+                  "value":26.99
                }
             }
          },
@@ -6021,8 +6295,8 @@
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$27.03",
-                  "value":27.03
+                  "formatted":"$27.40",
+                  "value":27.4
                }
             }
          },
@@ -6880,14 +7154,14 @@
                "min":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$13.51",
-                  "value":13.51
+                  "formatted":"$18.52",
+                  "value":18.52
                },
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$24.12",
-                  "value":24.12
+                  "formatted":"$24.21",
+                  "value":24.21
                },
                "max":{
                   "curr_abbr":"USD",
@@ -7723,8 +7997,8 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$24.68",
-                  "value":24.68
+                  "formatted":"$23.68",
+                  "value":23.68
                },
                "max":{
                   "curr_abbr":"USD",
@@ -8012,8 +8286,8 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$44.99",
-                  "value":44.99
+                  "formatted":"$45.00",
+                  "value":45.0
                },
                "max":{
                   "curr_abbr":"USD",
@@ -9577,8 +9851,8 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$21.39",
-                  "value":21.39
+                  "formatted":"$22.78",
+                  "value":22.78
                },
                "max":{
                   "curr_abbr":"USD",
@@ -9932,14 +10206,268 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$25.98",
-                  "value":25.98
+                  "formatted":"$27.49",
+                  "value":27.49
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$50.00",
-                  "value":50.0
+                  "formatted":"$37.99",
+                  "value":37.99
+               }
+            }
+         },
+         "folder":{
+            "name":"Uncategorized",
+            "id":1
+         }
+      },
+      {
+         "release_id":12803118,
+         "blocked_from_marketplace":false,
+         "collection_id":553548666,
+         "date_added":"2020-12-27T20:50:42-08:00",
+         "rating":0,
+         "basic_information":{
+            "artists":[
+               {
+                  "name":"John Maus",
+                  "anv":"",
+                  "join":",",
+                  "role":"",
+                  "tracks":"",
+                  "id":540828,
+                  "resource_url":"https://api.discogs.com/artists/540828",
+                  "url":"/artist/540828"
+               }
+            ],
+            "artists_sort":"John Maus",
+            "formats":[
+               {
+                  "name":"Vinyl",
+                  "qty":"1",
+                  "descriptions":[
+                     "LP",
+                     "Album",
+                     "Reissue"
+                  ]
+               }
+            ],
+            "genres":[
+               "Electronic",
+               "Rock"
+            ],
+            "huge_thumb":"https://img.discogs.com/5V4qEF1wqmEnNgdS2VS6LQ6w_Uw=/fit-in/350x350/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12803118-1606055451-2540.jpeg.jpg",
+            "id":12803118,
+            "master_id":345681,
+            "master_url":"https://api.discogs.com/masters/345681",
+            "labels":[
+               {
+                  "name":"Ribbon Music",
+                  "catno":"RBN001LP",
+                  "entity_type":"1",
+                  "entity_type_name":"Label",
+                  "id":255207,
+                  "resource_url":"https://api.discogs.com/labels/255207",
+                  "url":"/label/255207"
+               }
+            ],
+            "resource_url":"https://api.discogs.com/releases/12803118",
+            "status":"Accepted",
+            "styles":[
+               "New Wave",
+               "Lo-Fi"
+            ],
+            "thumb":"https://img.discogs.com/VR9XQpvHdH0kMs8vMBf_gADUhUo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-12803118-1606055451-2540.jpeg.jpg",
+            "title":"We Must Become The Pitiless Censors Of Ourselves",
+            "url":"/John-Maus-We-Must-Become-The-Pitiless-Censors-Of-Ourselves/release/12803118",
+            "year":2018,
+            "companies":[
+               {
+                  "name":"Ribbon Music",
+                  "catno":"",
+                  "entity_type":"13",
+                  "entity_type_name":"Phonographic Copyright (p)",
+                  "id":255207,
+                  "resource_url":"https://api.discogs.com/labels/255207"
+               },
+               {
+                  "name":"Ribbon Music",
+                  "catno":"",
+                  "entity_type":"14",
+                  "entity_type_name":"Copyright (c)",
+                  "id":255207,
+                  "resource_url":"https://api.discogs.com/labels/255207"
+               },
+               {
+                  "name":"Southern Studios",
+                  "catno":"",
+                  "entity_type":"29",
+                  "entity_type_name":"Mastered At",
+                  "id":95237,
+                  "resource_url":"https://api.discogs.com/labels/95237"
+               },
+               {
+                  "name":"Optimal Media GmbH",
+                  "catno":"BH93081",
+                  "entity_type":"17",
+                  "entity_type_name":"Pressed By",
+                  "id":313190,
+                  "resource_url":"https://api.discogs.com/labels/313190"
+               }
+            ],
+            "identifiers":[
+               {
+                  "type":"Label Code",
+                  "value":"LC 28025"
+               },
+               {
+                  "type":"Rights Society",
+                  "value":"SESAC"
+               },
+               {
+                  "type":"Barcode",
+                  "value":"887834000112",
+                  "description":"Only on hype sticker"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"RBN 001 LP BH93081 -01 A1 F.A.",
+                  "description":"Runout side A, etched"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"RBN 001 LP BH93081 -01 B1 F.A.",
+                  "description":"Runout side B, etched"
+               }
+            ],
+            "tracklist":[
+               {
+                  "position":"A1",
+                  "type_":"track",
+                  "title":"Streetlight",
+                  "duration":""
+               },
+               {
+                  "position":"A2",
+                  "type_":"track",
+                  "title":"Quantum Leap",
+                  "duration":""
+               },
+               {
+                  "position":"A3",
+                  "type_":"track",
+                  "title":"...And The Rain",
+                  "duration":""
+               },
+               {
+                  "position":"A4",
+                  "type_":"track",
+                  "title":"Hey Moon",
+                  "extraartists":[
+                     {
+                        "name":"Molly Nilsson",
+                        "anv":"",
+                        "join":"",
+                        "role":"Written-By",
+                        "tracks":"",
+                        "id":1337414
+                     }
+                  ],
+                  "duration":""
+               },
+               {
+                  "position":"A5",
+                  "type_":"track",
+                  "title":"Keep Pushing On",
+                  "duration":""
+               },
+               {
+                  "position":"B1",
+                  "type_":"track",
+                  "title":"The Crucifix",
+                  "duration":""
+               },
+               {
+                  "position":"B2",
+                  "type_":"track",
+                  "title":"Head For The Country",
+                  "duration":""
+               },
+               {
+                  "position":"B3",
+                  "type_":"track",
+                  "title":"Cop Killer",
+                  "duration":""
+               },
+               {
+                  "position":"B4",
+                  "type_":"track",
+                  "title":"Matter Of Fact",
+                  "duration":""
+               },
+               {
+                  "position":"B5",
+                  "type_":"track",
+                  "title":"We Can Breakthrough",
+                  "duration":""
+               },
+               {
+                  "position":"B6",
+                  "type_":"track",
+                  "title":"Believer",
+                  "duration":""
+               }
+            ],
+            "extraartists":[
+               {
+                  "name":"Frank Arkwright",
+                  "anv":"F.A.",
+                  "join":"",
+                  "role":"Lacquer Cut By",
+                  "tracks":"",
+                  "id":339601,
+                  "resource_url":"https://api.discogs.com/artists/339601"
+               },
+               {
+                  "name":"Harvey Birrell",
+                  "anv":"",
+                  "join":"",
+                  "role":"Mastered By",
+                  "tracks":"",
+                  "id":73361,
+                  "resource_url":"https://api.discogs.com/artists/73361"
+               },
+               {
+                  "name":"John Maus",
+                  "anv":"",
+                  "join":"",
+                  "role":"Written-By",
+                  "tracks":"A1 to A3, A5 to B6",
+                  "id":540828,
+                  "resource_url":"https://api.discogs.com/artists/540828"
+               }
+            ],
+            "released_formatted":"13 Jul 2018",
+            "notes":"180g heavyweight vinyl\nDownload card included\n\nMade in the EU\n\u2117 2011 + \u00a9 2018 Ribbon Music\n\nTracks numbered sequentially on back cover from 1 to 11.",
+            "sales_history":{
+               "min":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$21.00",
+                  "value":21.0
+               },
+               "median":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$22.98",
+                  "value":22.98
+               },
+               "max":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$32.09",
+                  "value":32.09
                }
             }
          },
@@ -10947,14 +11475,14 @@
                "min":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$12.00",
-                  "value":12.0
+                  "formatted":"$4.95",
+                  "value":4.95
                },
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$22.98",
-                  "value":22.98
+                  "formatted":"$23.00",
+                  "value":23.0
                },
                "max":{
                   "curr_abbr":"USD",
@@ -15993,14 +16521,14 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$26.47",
-                  "value":26.47
+                  "formatted":"$28.00",
+                  "value":28.0
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$41.00",
-                  "value":41.0
+                  "formatted":"$44.00",
+                  "value":44.0
                }
             }
          },
@@ -16808,14 +17336,14 @@
                "min":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$15.00",
-                  "value":15.0
+                  "formatted":"$12.20",
+                  "value":12.2
                },
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$21.98",
-                  "value":21.98
+                  "formatted":"$19.88",
+                  "value":19.88
                },
                "max":{
                   "curr_abbr":"USD",
@@ -17408,14 +17936,249 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$22.55",
-                  "value":22.55
+                  "formatted":"$22.64",
+                  "value":22.64
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$26.83",
-                  "value":26.83
+                  "formatted":"$28.04",
+                  "value":28.04
+               }
+            }
+         },
+         "folder":{
+            "name":"Uncategorized",
+            "id":1
+         }
+      },
+      {
+         "release_id":16135179,
+         "blocked_from_marketplace":false,
+         "collection_id":553547412,
+         "date_added":"2020-12-27T20:47:24-08:00",
+         "rating":0,
+         "basic_information":{
+            "artists":[
+               {
+                  "name":"Oneohtrix Point Never",
+                  "anv":"",
+                  "join":",",
+                  "role":"",
+                  "tracks":"",
+                  "id":1191704,
+                  "resource_url":"https://api.discogs.com/artists/1191704",
+                  "url":"/artist/1191704"
+               }
+            ],
+            "artists_sort":"Oneohtrix Point Never",
+            "formats":[
+               {
+                  "name":"Vinyl",
+                  "qty":"2",
+                  "text":"Yellow, Transparent",
+                  "descriptions":[
+                     "LP",
+                     "Album",
+                     "Limited Edition"
+                  ]
+               }
+            ],
+            "genres":[
+               "Electronic"
+            ],
+            "huge_thumb":"https://img.discogs.com/GnwZ7sF4HctBzIQ4tcDVtr-SWGc=/fit-in/350x350/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16135179-1604025024-7181.jpeg.jpg",
+            "id":16135179,
+            "master_id":1830969,
+            "master_url":"https://api.discogs.com/masters/1830969",
+            "labels":[
+               {
+                  "name":"Warp Records",
+                  "catno":"WARPLP318Y",
+                  "entity_type":"1",
+                  "entity_type_name":"Label",
+                  "id":23528,
+                  "resource_url":"https://api.discogs.com/labels/23528",
+                  "url":"/label/23528"
+               }
+            ],
+            "resource_url":"https://api.discogs.com/releases/16135179",
+            "status":"Accepted",
+            "styles":[
+               "Abstract",
+               "Ambient",
+               "Experimental",
+               "Synth-pop",
+               "New Age"
+            ],
+            "thumb":"https://img.discogs.com/om_vRhAi9q0BHG61BVOaKSsxaWQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-16135179-1604025024-7181.jpeg.jpg",
+            "title":"Magic Oneohtrix Point Never",
+            "url":"/Oneohtrix-Point-Never-Magic-Oneohtrix-Point-Never/release/16135179",
+            "year":2020,
+            "companies":[
+               
+            ],
+            "identifiers":[
+               {
+                  "type":"Barcode",
+                  "value":"0801061107215"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"WARPLP318 A BK 16656-01 A1 BEAV e TEN EIGHT SEVEN XV",
+                  "description":"A side, etched"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"WARPLP318 B BK 16656-01 B1",
+                  "description":"B side, etched"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"WARPLP318 C BK 16656-02 C1 BEAV e TEN EIGHT SEVEN V+",
+                  "description":"C side, etched"
+               },
+               {
+                  "type":"Matrix / Runout",
+                  "value":"WARPLP318 D BK 16656-02 D1",
+                  "description":"D side, etched"
+               }
+            ],
+            "tracklist":[
+               {
+                  "position":"A1",
+                  "type_":"track",
+                  "title":"Cross Talk I",
+                  "duration":""
+               },
+               {
+                  "position":"A2",
+                  "type_":"track",
+                  "title":"Auto & Allo",
+                  "duration":""
+               },
+               {
+                  "position":"A3",
+                  "type_":"track",
+                  "title":"Long Road Home",
+                  "duration":""
+               },
+               {
+                  "position":"A4",
+                  "type_":"track",
+                  "title":"Cross Talk II",
+                  "duration":""
+               },
+               {
+                  "position":"B1",
+                  "type_":"track",
+                  "title":"I Don't Love Me Anymore",
+                  "duration":""
+               },
+               {
+                  "position":"B2",
+                  "type_":"track",
+                  "title":"Bow Ecco",
+                  "duration":""
+               },
+               {
+                  "position":"B3",
+                  "type_":"track",
+                  "title":"The Whether Channel",
+                  "duration":""
+               },
+               {
+                  "position":"B4",
+                  "type_":"track",
+                  "title":"No Nightmares",
+                  "duration":""
+               },
+               {
+                  "position":"C1",
+                  "type_":"track",
+                  "title":"Cross Talk III",
+                  "duration":""
+               },
+               {
+                  "position":"C2",
+                  "type_":"track",
+                  "title":"Tales From The Trash Stratum",
+                  "duration":""
+               },
+               {
+                  "position":"C3",
+                  "type_":"track",
+                  "title":"Answering Machine",
+                  "duration":""
+               },
+               {
+                  "position":"C4",
+                  "type_":"track",
+                  "title":"Imago",
+                  "duration":""
+               },
+               {
+                  "position":"C5",
+                  "type_":"track",
+                  "title":"Cross Talk IV / Radio Lonelys",
+                  "duration":""
+               },
+               {
+                  "position":"D1",
+                  "type_":"track",
+                  "title":"Lost But Never Alone",
+                  "duration":""
+               },
+               {
+                  "position":"D2",
+                  "type_":"track",
+                  "title":"Shifting",
+                  "duration":""
+               },
+               {
+                  "position":"D3",
+                  "type_":"track",
+                  "title":"Wave Idea",
+                  "duration":""
+               },
+               {
+                  "position":"D4",
+                  "type_":"track",
+                  "title":"Nothing's Special",
+                  "duration":""
+               }
+            ],
+            "extraartists":[
+               {
+                  "name":"Ryan Schwabe",
+                  "anv":"",
+                  "join":"",
+                  "role":"Mastered By",
+                  "tracks":"",
+                  "id":690650,
+                  "resource_url":"https://api.discogs.com/artists/690650"
+               }
+            ],
+            "released_formatted":"30 Oct 2020",
+            "notes":"Independent Store Limited Edition 2LP Transparent Yellow Vinyl.\nprinted inner sleeves, 2 sided 12\" insert with credits and download card.",
+            "sales_history":{
+               "min":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$16.00",
+                  "value":16.0
+               },
+               "median":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$26.49",
+                  "value":26.49
+               },
+               "max":{
+                  "curr_abbr":"USD",
+                  "curr_id":1,
+                  "formatted":"$36.89",
+                  "value":36.89
                }
             }
          },
@@ -18268,14 +19031,14 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$21.03",
-                  "value":21.03
+                  "formatted":"$21.53",
+                  "value":21.53
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$30.30",
-                  "value":30.3
+                  "formatted":"$30.85",
+                  "value":30.85
                }
             }
          },
@@ -18538,8 +19301,8 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$31.67",
-                  "value":31.67
+                  "formatted":"$34.75",
+                  "value":34.75
                },
                "max":{
                   "curr_abbr":"USD",
@@ -19003,14 +19766,14 @@
                "median":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$28.36",
-                  "value":28.36
+                  "formatted":"$28.44",
+                  "value":28.44
                },
                "max":{
                   "curr_abbr":"USD",
                   "curr_id":1,
-                  "formatted":"$36.52",
-                  "value":36.52
+                  "formatted":"$36.59",
+                  "value":36.59
                }
             }
          },
