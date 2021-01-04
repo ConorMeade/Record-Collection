@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react';
+import { Container } from 'semantic-ui-react';
 import './App.css';
+import { AddAlbumForm } from "./components/AddAlbumForm"
 import { Albums } from "./components/Albums" 
 // import AddAlbumForm from './AddAlbumForm'
 // import AlbumTable from './AlbumTable'
 
 function App() {
-  const albumData = [
-    { id: 1, album: "Kind Of Blue", artist: "Miles Davis", mbid: null},
-    { id: 2, album: "A Love Supreme", artist: "John Coltrane", mbid: null},
-    { id: 3, album: "Person Pitch", artist: "Panda Bear", mbid: null}
-  ]
-
   const [albums, setAlbums] = useState([]);
   const [currentTime, setCurrentTime] = useState(0);
 
@@ -40,16 +36,14 @@ function App() {
 
   console.log(albums)
   return (
-    <div>
-      <p>The current time is {currentTime}.</p>
-      <ul>
-        <br />
-        <Albums albums={albums}/>
-        {/* {albums} */}
-        {/* <AlbumTable albums={albums}/> */}
-        {/* <AddAlbumForm addAlbum={addAlbum}/> */}
-      </ul>
-    </div>
+    <Container>
+        <p>The current time is {currentTime}.</p>
+          <br />
+          <AddAlbumForm 
+            onNewAlbum={album => 
+              setAlbums(currentAlbums => [album, ...currentAlbums])}/>
+          <Albums albums={albums}/>
+      </Container>
   )
 }
 

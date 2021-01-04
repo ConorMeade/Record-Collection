@@ -1,4 +1,5 @@
 import time
+import random
 from flask import Blueprint, jsonify, request
 from . import db
 from .models import Album
@@ -33,7 +34,8 @@ def init_collection():
         if not exists:
             db.session.add(collection_entry)
             db.session.commit()
-            
+    # query all album ids
+    # print(album_ids)
     # return albums
 
 
@@ -49,19 +51,39 @@ def add_album():
     # taking data from request
     album_data = request.get_json()
     # using schema from models.py (no cover url needed, for now)
-    new_album = Album(id=album_data['id'], 
+    album_list = Album.query.all()
+    id_set = set()
+    album_ids = Album.query.filter(Album.id).all()
+    for i in album_ids:
+        id_set.add(i.id)
+    valid_id = False
+
+    while not valid_id:
+        test_id = random.randint(10000, 30000000)
+        if test_id not in id_set:
+            valid_id = True
+            rand_id = test_id
+            id_set.add(rand_id)
+    
+    new_album = Album(id=rand_id, 
     title=album_data['title'], 
     artist=album_data['artist'], 
     year=album_data['year'], 
     genre=album_data['genre'], 
     date_added=album_data['date_added'], 
-    cover=None)
+    cover=album_data['cover'])
     
     # adding data to database
     db.session.add(new_album)
     db.session.commit()
 
     return 'Done', 201
+
+
+# @main.route('/delete_album', method=['DELETE'])
+
+# def delete_album():
+#     pass
 
 @main.route('/albums')
 
