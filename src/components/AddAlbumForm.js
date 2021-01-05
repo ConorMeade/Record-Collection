@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form, Input } from "semantic-ui-react"
+import './AlbumForm.css'
+
 
 
 export const AddAlbumForm = ({ onNewAlbum }) => {
@@ -17,47 +19,51 @@ export const AddAlbumForm = ({ onNewAlbum }) => {
       }, [])
 
     return (
+        <>
+        <h1>Add A New Album</h1>
         <Form>
-            <Form.Field>
-                <Input
-                    fluid label="Album Title"
-                    placeholder="Title"
-                    value={title}
-                    onChange={e => setTitle(e.target.value)}
-                />
-            </Form.Field>
-            <Form.Field>
-                <Input
-                    fluid label="Artist"
-                    placeholder="Artist"
-                    value={artist}
-                    onChange={e => setArtist(e.target.value)}
-                />
-            </Form.Field>
-            <Form.Field>
-                <Input
-                    fluid label="Year Released"
-                    placeholder="Year"
-                    value={year}
-                    onChange={e => setYear(e.target.value)}
-                />
-            </Form.Field>
-            <Form.Field>
-                <Input
-                    fluid label="Album Genre"
-                    placeholder="Genre"
-                    value={genre}
-                    onChange={e => setGenre(e.target.value)}
-                />
-            </Form.Field>
-            <Form.Field>
-                <Input
-                    fluid label="Cover Art"
-                    placeholder="Cover (use image url from discogs release page)"
-                    value={cover}
-                    onChange={e => setCover(e.target.value)}
-                />
-            </Form.Field>
+            <Form.Group widths="equal">
+                <Form.Field>
+                    <Input
+                        fluid label="Album Title"
+                        placeholder="Title"
+                        value={title}
+                        onChange={e => setTitle(e.target.value)}
+                    />
+                </Form.Field>
+                <Form.Field>
+                    <Input
+                        fluid label="Artist"
+                        placeholder="Artist"
+                        value={artist}
+                        onChange={e => setArtist(e.target.value)}
+                    />
+                </Form.Field>
+                <Form.Field>
+                    <Input
+                        fluid label="Year Released"
+                        placeholder="Year"
+                        value={year}
+                        onChange={e => setYear(e.target.value)}
+                    />
+                </Form.Field>
+                <Form.Field>
+                    <Input
+                        fluid label="Album Genre"
+                        placeholder="Genre"
+                        value={genre}
+                        onChange={e => setGenre(e.target.value)}
+                    />
+                </Form.Field>
+                <Form.Field>
+                    <Input
+                        fluid label="Cover Art"
+                        placeholder="Cover (use image url from discogs release page)"
+                        value={cover}
+                        onChange={e => setCover(e.target.value)}
+                    />
+                </Form.Field>
+            </Form.Group>
             <Form.Field>
                 <Button
                     onClick={async () => {
@@ -86,38 +92,6 @@ export const AddAlbumForm = ({ onNewAlbum }) => {
                 </Button>
             </Form.Field>
         </Form>
+        </>
     )
 }
-
-
-
-// const AddAlbumForm = (props) => {
-//     const initialFormState = { id: null, album: '', artist: '', mbid: ''}
-//     const [album, setAlbum] = useState(initialFormState)
-
-//     const handleIntputChange = (e) => {
-//         const { name, value } = e.target
-//         console.log(e)
-//         setAlbum({ ...album, [name] : value})
-//     }
-
-//     return(
-//         <form
-//             onSubmit={(e) => {
-//                 e.preventDefault()
-//                 if(!album.album || !album.artist) return
-
-//                 props.addAlbum(album)
-//                 setAlbum(initialFormState)
-//             }}
-//         >
-//             <label>Album Title: </label>
-//             <input type="text" name="album" value={album.album} onChange={handleIntputChange}/>
-//             <label>Artist: </label>
-//             <input type="text" name="artist" value={album.artist} onChange={handleIntputChange}/>
-//             <button>Add Album</button>
-//         </form>
-//     )
-// }
-
-// export default AddAlbumForm
