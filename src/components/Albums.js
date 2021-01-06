@@ -6,7 +6,7 @@ import { List, Header, Image } from "semantic-ui-react"
 
 export const Albums = ({ albums }) => {
     return (
-        <List>
+        <List ordered>
             <h2>Total Albums: {albums.length}</h2>
             <hr />
             {albums.map(album => {

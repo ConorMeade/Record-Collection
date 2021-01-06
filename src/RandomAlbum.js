@@ -3,10 +3,10 @@ import React from 'react'
 
 // grab random album from our slideshow of album data
 
-const RandomAlbum = (props) => {
+const RandomAlbum = ({ albums }) => {
     return(
         <div>
-
+            
         </div>
     )
 }

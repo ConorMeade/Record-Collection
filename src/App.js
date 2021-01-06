@@ -4,13 +4,11 @@ import './App.css';
 import { AddAlbumForm } from "./components/AddAlbumForm"
 import { Albums } from "./components/Albums" 
 import { Slideshow } from './components/Slideshow';
-// import AddAlbumForm from './AddAlbumForm'
-// import AlbumTable from './AlbumTable'
+
 
 function App() {
   const [albums, setAlbums] = useState([]);
   const [currentTime, setCurrentTime] = useState(0);
-  const [addOpen, setAddOpen] = useState(false)
   const [albumListOpen, setAlbumListOpen] = useState(false)
 
   useEffect(() => {
@@ -26,10 +24,6 @@ function App() {
     })
   }, [])
 
-  // console.log(albumMbids);
-
-
-  console.log(albums)
   return (
     <Container styles>
         <p>The current time is {currentTime}.</p>
@@ -37,27 +31,20 @@ function App() {
           <Slideshow albums={albums}/>
           <br />
           <br />
-          <Modal
-            className="New-Album-Btn"
-            onClose={() => setAddOpen(false)}
-            onOpen={() => setAddOpen(true)}
-            open={addOpen}
-            trigger={<Button>Add A New Album</Button>}
-          >
-            <AddAlbumForm 
-              onNewAlbum={album => 
-                setAlbums(currentAlbums => [album, ...currentAlbums])}/>
-          </Modal>
-
+          <AddAlbumForm onNewAlbum={album => 
+              setAlbums(currentAlbums => [album, ...currentAlbums])}
+          />
           <Modal
             onClose={() => setAlbumListOpen(false)}
             onOpen={() => setAlbumListOpen(true)}
             open={albumListOpen}
-            trigger={<Button>Full Album List</Button>}
+            trigger={
+              <Button.Group floated="right">
+                <Button>Full Album List</Button>
+              </Button.Group>
+            }
           >
-            <div class="ui clearing segment">
               <Albums albums={albums} />
-            </div>
           </Modal>
 
 
