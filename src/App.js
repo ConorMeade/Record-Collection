@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button, Container, Modal } from 'semantic-ui-react';
+import { Button, Container, Modal, Segment } from 'semantic-ui-react';
 import './App.css';
 import { AddAlbumForm } from "./components/AddAlbumForm"
 import { Albums } from "./components/Albums" 
@@ -26,28 +26,28 @@ function App() {
 
   return (
     <Container styles>
-        <p>The current time is {currentTime}.</p>
+        <p className="time">The current time is {currentTime}.</p>
           <br />
           <Slideshow albums={albums}/>
           <br />
           <br />
-          <AddAlbumForm onNewAlbum={album => 
-              setAlbums(currentAlbums => [album, ...currentAlbums])}
-          />
-          <Modal
-            onClose={() => setAlbumListOpen(false)}
-            onOpen={() => setAlbumListOpen(true)}
-            open={albumListOpen}
-            trigger={
-              <Button.Group floated="right">
-                <Button>Full Album List</Button>
-              </Button.Group>
-            }
-          >
-              <Albums albums={albums} />
-          </Modal>
-
-
+          <Segment basic textAlign={"center"}>
+            <AddAlbumForm onNewAlbum={album => 
+                  setAlbums(currentAlbums => [album, ...currentAlbums])}
+            />
+            <Modal
+              onClose={() => setAlbumListOpen(false)}
+              onOpen={() => setAlbumListOpen(true)}
+              open={albumListOpen}
+              trigger={
+                <Button.Group>
+                  <Button >Full Album List</Button>
+                </Button.Group>
+              }
+            >
+                <Albums albums={albums} />
+            </Modal>
+          </Segment>
       </Container>
   )
 }

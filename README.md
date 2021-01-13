@@ -6,11 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### 'npm start-api | yarn start-api
+### `npm start-api` | `yarn start-api`
 
-Runs Flask Python server on [http://localhost:5000](http://localhost:5000). Make sure to do this first before starting client-side.
+DO THIS FIRST. Runs Flask Python server on [http://localhost:5000](http://localhost:5000).
 
-### `npm start` | 'yarn start'
+### `npm start` | `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

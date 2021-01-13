@@ -1,3 +1,18 @@
+.time {
+  margin-left: 420px;
+}
+
+.new-album-form {
+  margin-left: 1000px;
+  color:rebeccapurple
+}
+
+.full-list {
+  margin-left: 500px;
+  color:rebeccapurple
+}
+
+
 .New-Album-Btn {
   align-items: right;
 }
